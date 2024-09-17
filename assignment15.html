@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #ff6600;
+            margin: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .translate {
+            transform: translate(50px, 50px);
+        }
+
+        .rotate {
+            transform: rotate(45deg);
+        }
+
+        .scale {
+            transform: scale(1.5);
+        }
+
+        .skew {
+            transform: skew(20deg);
+        }
+
+        .complex {
+            transform: translate(30px, 30px) rotate(45deg) scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Transforms</h1>
+    <div class="box translate"></div>
+    <div class="box rotate"></div>
+    <div class="box scale"></div>
+    <div class="box skew"></div>
+    <div class="box complex"></div>
+</body>
+</html>
