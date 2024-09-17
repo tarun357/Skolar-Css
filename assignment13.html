@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #ff6600;
+            transition: background-color 0.5s ease-in-out, width 1s;
+        }
+
+        .box:hover {
+            background-color: #0066cc;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Transitions</h1>
+    <div class="box"></div>
+</body>
+</html>
