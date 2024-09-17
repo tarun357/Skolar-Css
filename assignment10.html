@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Images</h1>
+    <picture>
+        <source srcset="https://www.shutterstock.com/shutterstock/photos/2367283291/display_1500/stock-photo-woman-relaxing-on-staand-up-paddle-board-at-quiet-lake-with-morning-fog-and-fall-taxodium-distichum-2367283291.jpg" media="(min-width: 1024px)">
+        <source srcset="https://www.shutterstock.com/shutterstock/photos/2274917969/display_1500/stock-photo-full-length-person-and-brave-alert-dog-walking-along-foggy-alley-in-city-autumn-park-in-2274917969.jpg" media="(min-width: 768px)">
+        <img src="https://www.shutterstock.com/shutterstock/photos/2304269149/display_1500/stock-photo-vegetables-and-fruits-on-the-table-dutch-style-still-life-2304269149.jpg" alt="Responsive Image">
+    </picture>
+</body>
+</html>
