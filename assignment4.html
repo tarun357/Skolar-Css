@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .content-box {
+            width: 200px;
+            padding: 20px;
+            border: 5px solid #ff6600;
+            margin: 20px auto;
+            box-sizing: content-box;
+            background-color: #fff;
+        }
+
+        .border-box {
+            width: 200px;
+            padding: 20px;
+            border: 5px solid #0066cc;
+            margin: 20px auto;
+            box-sizing: border-box;
+            background-color: #fff;
+        }
+
+        .description {
+            text-align: center;
+            font-size: 14px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Box Model Demonstration</h1>
+
+    <div class="content-box">
+        <p>This is using the content-box model.</p>
+    </div>
+    <p class="description">In the content-box model, padding and borders are added to the content width.</p>
+
+    <div class="border-box">
+        <p>This is using the border-box model.</p>
+    </div>
+    <p class="description">In the border-box model, padding and borders are included within the total width.</p>
+</body>
+</html>
