@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Grid</title>
+    <style>
+   
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+     
+        .main-grid {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "nav content sidebar"
+                "footer footer footer";
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 100px 1fr 100px;
+            grid-gap: 10px;
+            padding: 20px;
+            background-color: #0066cc;
+            color: white;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #ff6600;
+        }
+
+        .nav {
+            grid-area: nav;
+            background-color: #ff9933;
+        }
+
+        .content {
+            grid-area: content;
+            background-color: #ffcc00;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #ff6600;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #ff9933;
+        }
+
+        .nested-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            margin-top: 10px;
+        }
+
+        .nested-item {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Advanced CSS Grid</h1>
+
+
+    <div class="main-grid">
+        <div class="header">Header</div>
+        <div class="nav">Navigation</div>
+        <div class="content">
+            Main Content
+            <div class="nested-grid">
+                <div class="nested-item">Nested 1</div>
+                <div class="nested-item">Nested 2</div>
+            </div>
+        </div>
+        <div class="sidebar">Sidebar</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
