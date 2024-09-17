@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            --primary-color: #ff6600;
+            --secondary-color: #0066cc;
+            --font-size: 18px;
+            --spacing: 10px;
+        }
+
+        body {
+            font-size: var(--font-size);
+            margin: var(--spacing);
+        }
+
+        h1 {
+            color: var(--primary-color);
+        }
+
+        p {
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Variables Example</h1>
+    <p>This is a paragraph using CSS variables for color and spacing.</p>
+</body>
+</html>
