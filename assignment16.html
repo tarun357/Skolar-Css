@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes and Pseudo-Elements</title>
+    <style>
+        a:hover {
+            color: red;
+        }
+
+        a:focus {
+            outline: 2px solid blue;
+        }
+
+        p::before {
+            content: "Before: ";
+            color: green;
+        }
+
+        p::after {
+            content: " :After";
+            color: blue;
+        }
+
+        ul li:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+
+        ul li:nth-child(even) {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Classes and Pseudo-Elements</h1>
+    <a href="#">Hover or Focus on me</a>
+    <p>This is a paragraph with pseudo-elements</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+</body>
+</html>
