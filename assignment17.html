@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Forms</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        input:focus {
+            border-color: #0066cc;
+            outline: none;
+        }
+
+        button {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #ff9933;
+        }
+    </style>
+</head>
+<body>
+    <h1>Styled Form</h1>
+    <form>
+        <input type="text" placeholder="Enter your name">
+        <select>
+            <option value="">Select a country</option>
+            <option value="us">India</option>
+            <option value="ca">Canada</option>
+        </select>
+        <label><input type="checkbox"> Subscribe to newsletter</label>
+        <label><input type="radio" name="gender"> Male</label>
+        <label><input type="radio" name="gender"> Female</label>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
