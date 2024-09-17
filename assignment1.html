@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors and Properties</title>
+    <style>
+        p {
+            color: #333;
+            font-size: 16px;
+        }
+        .highlight {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        #main-heading {
+            color: #0066cc;
+            font-size: 28px;
+            text-align: center;
+        }
+        a[href] {
+            color: #ff6600;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #ff3300;
+        }
+        p::first-letter {
+            font-size: 2em;
+            color: #ff9900;
+        }
+        button:hover {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-heading">Welcome to the CSS Selectors Page</h1>
+    <p>This is a simple paragraph styled using element selectors.</p>
+    <p class="highlight">This paragraph is styled using class selectors.</p>
+    <a href="#">This is a link styled with pseudo-class.</a>
+    <button>Hover over me!</button>
+    <div class="container">
+        <h2>Section Heading</h2>
+        <p>Another paragraph inside a div.</p>
+    </div>
+</body>
+</html>
